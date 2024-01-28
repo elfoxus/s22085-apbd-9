@@ -18,5 +18,6 @@ public class DatabaseContext : DbContext
     public virtual DbSet<Patient> Patients { get; set; }
     public virtual DbSet<Prescription> Prescription { get; set; }
     public virtual DbSet<PrescriptionMedicament> PrescriptionMedicament { get; set; }
+    public virtual DbSet<User> Users { get; set; }
     
 }
