@@ -23,7 +23,6 @@ public class DoctorController : ControllerBase
     [HttpGet]
     public async Task<IEnumerable<DoctorInfoDto>> GetDoctors()
     {
-        throw new Exception("Something went wrong");
         return await _database.Doctors
             .Select(d => new DoctorInfoDto(
                 d.IdDoctor,
