@@ -1,10 +1,12 @@
 ﻿using apbd_8_s22085.Database;
 using apbd_8_s22085.Dtos;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
 namespace apbd_8_s22085.Controllers;
 
+[Authorize]
 [ApiController]
 [Route("[controller]")]
 public class PrescriptionController : ControllerBase
